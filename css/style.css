@@ -62,97 +62,6 @@ img {
   width: 100%;
   height: auto;
 }
-/*сетка*/
-/* @media (max-width: 108em) {
-    html {
-        font-size: 9px;
-    }
-}
-
-@media (max-width: 105em) {
-    html {
-        font-size: 8.75px;
-    }
-}
-
-@media (max-width: 91.5em) {
-    html {
-        font-size: 7.9px;
-    }
-}
-
-@media (max-width: 91em) {
-    html {
-        font-size: 8.4px;
-    }
-}
-
-@media (max-width: 90em) {
-    html {
-        font-size: 7.9px;
-    }
-}
-
-@media (max-width: 80em) {
-    html {
-        font-size: 7.2px
-    }
-}
-
-@media (max-width: 72em) {
-    html {
-        font-size: 6.5px;
-    }
-}
-
-@media (max-width: 64em) {
-    html {
-        font-size: 5.5px;
-    }
-}
-
-@media (max-width: 48em) {
-    html {
-        font-size: 10px;
-    }
-
-}
-
-@media (max-width: 44em) {
-    html {
-        font-size: 9px;
-    }
-}
-
-@media (max-width: 38em) {
-    html {
-        font-size: 8px;
-    }
-}
-
-@media (max-width: 34em) {
-    html {
-        font-size: 7px;
-    }
-}
-
-@media (max-width: 30em) {
-    html {
-        font-size: 6px;
-    }
-}
-
-@media (max-width: 26em) {
-    html {
-        font-size: 4.5px;
-    }
-}
-
-@media (max-width: 21em) {
-    html {
-        font-size: 4.4px;
-    }
-} */
 
 .container {
   max-width: 113.5rem;
@@ -166,9 +75,6 @@ img {
   left: 0;
   right: 0;
   top: 6.4rem;
-  /* left: 50%;
-  top: 6.4rem;
-  transform: translate(-50%, 0); */
 }
 .header__logo {
   width: 7.9rem;
@@ -362,6 +268,10 @@ img {
     max-width: 768px;
     padding: 0 3rem 3rem 3rem;
   }
+  .main{
+    background-position-x: 60%;
+
+  }
   .header .container{
     align-items: center;
     justify-content: space-between;
@@ -371,7 +281,8 @@ img {
     position: absolute;
     right: 0;
     top: -6.4rem;
-    flex-direction: column;
+    width: 65vw;
+    flex-direction: column-reverse;
     background-color: #151515;
     padding: 2rem 4rem 2rem 2rem;
   }
@@ -394,13 +305,16 @@ img {
   .nav {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+   
   }
+  .nav__link:not(:last-child) {
+  margin-right:0;
+}
   .nav__link{
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .social{
-    justify-content: space-around;
+    margin:2rem 0;
   }
 
   .description__wrap {

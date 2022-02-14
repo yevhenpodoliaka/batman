@@ -15,7 +15,7 @@ let closeMenu = document.querySelector('.btn-close-menu');
 let menuMobile = document.querySelector('.header__menu');
 
 burger.addEventListener('click', () => {
-  menuMobile.style.display = 'block';
+  menuMobile.style.display = 'flex';
 })
 
 closeMenu.addEventListener('click', () => {
