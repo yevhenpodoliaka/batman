@@ -9,3 +9,15 @@ const swiper = new Swiper('.main-slider', {
 
 
 });
+
+let burger = document.querySelector('.btn-open-menu');
+let closeMenu = document.querySelector('.btn-close-menu');
+let menuMobile = document.querySelector('.header__menu');
+
+burger.addEventListener('click', () => {
+  menuMobile.style.display = 'block';
+})
+
+closeMenu.addEventListener('click', () => {
+  menuMobile.style.display = 'none';
+})

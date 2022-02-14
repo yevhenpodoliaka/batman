@@ -12,77 +12,79 @@
   <body>
     <header class="header">
       <div class="container">
+        <img class="header__logo" src="./img/logo.svg" alt="лого Бэтмен" />
         <div class="header__menu">
-          <img class="header__logo" src="./img/logo.svg" alt="лого Бэтмен" />
-          <nav class="header__nav">
-            <a href="#">Описание</a>
-            <a href="#">Трейлер</a>
-            <a href="#">Отзывы</a>
+          <nav class="nav">
+            <a class="nav__link" href="#">Описание</a>
+            <a class="nav__link" href="#">Трейлер</a>
+            <a class="nav__link" href="#">Отзывы</a>
           </nav>
+          <ul class="social">
+            <li class="social__item"><a class="social__icon" href="#"><img src="./img/twitter.svg" alt="twitter" /></a></li>
+            <li class="social__item"><a class="social__icon" href="#"><img src="./img/instagram.svg" alt="instagram" /></a></li>
+            <li class="social__item"><a class="social__icon" href="#"><img src="./img/facebook.svg" alt="facebook" /></a></li>
+          </ul>
+          <button class="btn-close-menu">
+            <img src="./img/menu-button-close.svg" alt="кнопка открытия меню" width="30px">
+          </button>
         </div>
-        <div class="header__social">
-          <a class="header__social-icon" href="#"
-            ><img src="./img/twitter.svg" alt="twitter"
-          /></a>
-          <a class="header__social-icon" href="#"
-            ><img src="./img/instagram.svg" alt="instagram"
-          /></a>
-          <a class="header__social-icon" href="#"
-            ><img src="./img/facebook.svg" alt="facebook"
-          /></a>
-        </div>
+      <button class="btn-open-menu">
+        <img src="./img/open-menu.svg" alt="кнопка открытия меню" width="30px">
+      </button>
       </div>
     </header>
     <main class="main">
       <div class="container">
-        <p class="main__rating-title">2022, боевик, триллер</p>
+        <p class="rating-title">2022, боевик, триллер</p>
 
-        <ul class="main__rating-stars">
-          <li class="main__rating-star star__activ">
+        <ul class="rating-stars">
+          <li class="rating-star star__activ">
             <img src="./img/star-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star star__activ">
+          <li class="rating-star star__activ">
             <img src="./img/star-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star star__activ">
+          <li class="rating-star star__activ">
             <img src="./img/star-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star star__activ">
+          <li class="rating-star star__activ">
             <img src="./img/star-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star star__activ">
+          <li class="rating-star star__activ">
             <img src="./img/star-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star star__activ">
+          <li class="rating-star star__activ">
             <img src="./img/star-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star star__activ">
+          <li class="rating-star star__activ">
             <img src="./img/star-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star">
+          <li class="rating-star">
             <img src="./img/star-no-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star">
+          <li class="rating-star">
             <img src="./img/star-no-activ.svg" alt="" />
           </li>
-          <li class="main__rating-star">
+          <li class="rating-star">
             <img src="./img/star-no-activ.svg" alt="" />
           </li>
         </ul>
-        <p class="main__rating-number">7/10</p>
+        <p class="rating-number">7/10</p>
 
         <h1 class="main__header">Бэтмен</h1>
-
-        <p class="main__description">
-          После двух лет поисков правосудия на улицах Готэма для своих сограждан
-          Бэтмен становится олицетворением беспощадного возмездия. Когда в
-          городе происходит серия жестоких нападений на представителей элиты,
-          загадочные улики приводят Брюса Уэйна в самые темные закоулки
-          преступного мира. Теперь под прицелом оказывается сам Бэтмен.
-        </p>
-        <button class="button__play" type="button">
-            <img src="./img/play.svg" alt="кнопка воспроизвести" />
-        </button>
+          <div class="description__wrap">
+                <p class="main__description">
+                  После двух лет поисков правосудия на улицах Готэма для своих сограждан
+                  Бэтмен становится олицетворением беспощадного возмездия. Когда в
+                  городе происходит серия жестоких нападений на представителей элиты,
+                  загадочные улики приводят Брюса Уэйна в самые темные закоулки
+                  преступного мира. Теперь под прицелом оказывается сам Бэтмен.
+                </p>
+                <button class="button__play" type="button">
+                  <img class="button__play-icon" src="./img/play.svg" alt="кнопка воспроизвести" />
+                </button>
+          </div>
+    
         <a href="#" class="button__pay">Купить билеты</a>
         <!-- slider -->
         <div class="main-slider__wrap">
@@ -124,9 +126,9 @@
       <div class="container">
         <p class="footer__copy">© 2022 The Batman. All right reserved.</p>
         <ul class="footer__menu">
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Legal</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Privacy Policy</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Terms of Service</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Legal</a></li>
         </ul>
       </div>
     </footer>
